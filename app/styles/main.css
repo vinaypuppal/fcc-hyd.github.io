@@ -203,7 +203,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    background-color: transparent;
+    background-color: #006400;
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -235,11 +235,8 @@ header {
   background-attachment: scroll;
   background-position: center center;
   background-size : 100% 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-size: contain;
+  margin-top: 100px;
   text-align: center;
   color: white;
 }
@@ -286,6 +283,10 @@ header .intro-text .intro-heading {
 section {
   padding: 100px 0;
 }
+
+section.meetups {
+  padding: 0 0 100px 0;
+}
 section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
@@ -303,6 +304,9 @@ section h3.section-subheading {
   section {
     padding: 150px 0;
   }
+  section.meetups {
+    padding: 0 0 150px 0;
+  } 
 }
 .service-heading {
   margin: 15px 0;
