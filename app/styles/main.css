@@ -284,9 +284,6 @@ section {
   padding: 100px 0;
 }
 
-section.meetups {
-  padding: 0 0 100px 0;
-}
 section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
@@ -304,9 +301,6 @@ section h3.section-subheading {
   section {
     padding: 150px 0;
   }
-  section.meetups {
-    padding: 0 0 150px 0;
-  } 
 }
 .service-heading {
   margin: 15px 0;
