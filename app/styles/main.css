@@ -743,3 +743,10 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #006400;
 }
+
+/* Custom css */
+
+.mentors-member {
+  text-align: center; 
+}
+
