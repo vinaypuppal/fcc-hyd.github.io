@@ -559,7 +559,6 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -746,7 +745,11 @@ body {
 
 /* Custom css */
 
-.mentors-member {
+.team-member {
   text-align: center; 
 }
 
+.team-last-row {
+  display: flex;
+  justify-content: center;
+}
