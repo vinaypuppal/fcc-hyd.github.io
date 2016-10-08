@@ -757,16 +757,3 @@ body {
   display: flex;
   justify-content: center;
 }
-
-.ghost_btn{
-  color: #FFF;
-  text-decoration: none;
-  border: 5px solid #006400;
-  background: transparent;
-  padding-right: 1em; padding-left: 1em;
-  
-}
-
-.ghost_btn:hover{
-  background: #006400;
-}
