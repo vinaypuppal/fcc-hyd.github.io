@@ -560,7 +560,7 @@ aside.clients img {
 section#contact {
   background-color: #222222;
   background-position: center;
-  background: url('img/footer_lodyas.png');
+  background: url('../img/footer_lodyas.png');
   background-size: cover;
   
 }
