@@ -757,3 +757,12 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.ghost_btn{
+  border: 5px solid #006400;
+  background: transparent;
+}
+
+.ghost_btn:hover{
+  background: #006400;
+}
