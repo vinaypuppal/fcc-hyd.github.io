@@ -747,7 +747,7 @@ body {
 
 #countdown
 {
-  background-image: url("./../img/code.jpg");
+  /*background-image: url("./../img/code.jpg");*/
   background-position: center;
   background-size: cover;
   margin-top: 100px;
