@@ -14,6 +14,8 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
         <!--CSS -->
         <link href="styles/main.css" rel="stylesheet">
+        <!--CSS for countdown timer-->
+        <link href="styles/countdown.css" rel="stylesheet">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -66,6 +68,33 @@
                 </div>
             </div>
         </header>
+
+        <!--Countdown Timer-->
+        <section id="countdown" class="bg-darkest-gray">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <h1>Countdown to Next Meetup</h1>
+                        </div>
+                        <div id="holder" class="container jumbotron">
+                            <div id="details">
+                                <h4><small>Event :</small> Blah</h2>
+                                <h4><small>Venue :</small> Blah, blah, 1100000</h2>
+                                <h4><small>Date :</small> 1<sup>st</sup> January, 2016 12:00 am</h2>
+                            </div>
+                            <h2 class="col-sm-3"><span id="days"></span> <small>Days</small></h2>
+                            <h2 class="col-sm-3"><span id="hours"></span> <small>Hours</small></h2>
+                            <h2 class="col-sm-3"><span id="mins"></span> <small>Minutes</small></h2>
+                            <h2 class="col-sm-3"><span id="secs"></span> <small>Seconds</small></h2>
+                        </div>
+
+                        <script src="./scripts/countdown.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Services Section -->
         <section class="bg-light-gray">
             <div class="container">

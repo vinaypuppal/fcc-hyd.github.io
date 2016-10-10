@@ -43,7 +43,11 @@ function time_diff(to)
     var secs = Math.floor(time_left / ms_in_a_sec);
 
     time_left = {d:days, h:hours, m:mins, s:secs};
-    document.getElementById("countdown").innerHTML = "<div id='days'>" + time_left.d + " Days</div><div id='hours'>" + time_left.h + " Hours</div><div id='mins'>" + time_left.m + " Minutes</div><div id='secs'>" + time_left.s + " Seconds</div>";
+    
+    document.getElementById("days").innerHTML = time_left.d;
+    document.getElementById("hours").innerHTML = time_left.h;
+    document.getElementById("mins").innerHTML = time_left.m;
+    document.getElementById("secs").innerHTML = time_left.s;
 
     return time_left; // returns associative array of days, hours, minutes and seconds remaining
 }
