@@ -11,16 +11,14 @@
 
 
 
-var next_meetup = "2017-01-01 0:00:00"; //specify date(yyyy-mm-dd) time(h:m:s) in ISO format; example "2016-10-11 0:00:00" 
+var next_meetup = "2016-10-16 14:00:00"; //specify date(yyyy-mm-dd) time(h:m:s) in ISO format; example "2016-10-11 0:00:00" 
 countdown(next_meetup);
 
-function countdown(to){
+function countdown(to) {
     setInterval(function(){time_diff(to);}, 500);
 }
 
-function time_diff(to){
-    now = Date();
-
+function time_diff(to) {
     var time_left = Date.parse(to) - Date.now();
 
     var ms_in_a_sec = 1000;
