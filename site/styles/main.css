@@ -745,24 +745,23 @@ body {
   justify-content: center;
 }
 
-#countdown
-{
-  /*background-image: url("./../img/code.jpg");*/
+/*custom CSS for countdown timer*/
+
+#countdown {
+  /*background-image: url("./../img/countdown_bg.jpg");*/
   background-position: center;
   background-size: cover;
   margin-top: 100px;
 }
 
-#countdown #holder
-{
+#countdown #holder {
   background: rgba(256, 256, 256, 0.5);
   border-color: #307701;
   border-width: 5px;
   border-style: solid;
 }
 
-#countdown h1
-{
+#countdown h1 {
   color: rgba(10, 100, 3, 1);
   text-shadow:
     -1px -1px 0 white,
@@ -772,27 +771,23 @@ body {
   margin-bottom: 1em;
 }
 
-#countdown h2
-{
+#countdown h2 {
   background: rgba(10, 100, 3, 0.8);
   color: white;
   padding: 10px;
   border-radius: 100px;
 }
 
-#countdown h2 small
-{
+#countdown h2 small {
   color: lightgray;
 }
 
-#countdown #holder #details
-{
+#countdown #holder #details {
   background: rgba(10, 100, 3, 0.8);
   color: white;
   border-radius: 200px
 }
 
-#countdown #holder #details small
-{
+#countdown #holder #details small {
   color: white;
 }
