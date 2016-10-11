@@ -9,7 +9,9 @@
 //     <div id = "secs"></div>
 // </div>
 
-
+document.getElementById("event").innerHTML = "Pair Programming Meetup (Beginner Friendly)"; 
+document.getElementById("venue").innerHTML = "91springboard @ Plot No-44, Phase I, Kavuri Hills <br /> Hyderabad 500033";
+document.getElementById("date").innerHTML = "Sunday 16<sup>th</sup> October 2016<br />2:00 pm - 4:00 pm";
 
 var next_meetup = "2016-10-16 14:00:00"; //specify date(yyyy-mm-dd) time(h:m:s) in ISO format; example "2016-10-11 0:00:00" 
 countdown(next_meetup);
