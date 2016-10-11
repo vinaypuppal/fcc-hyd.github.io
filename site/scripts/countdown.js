@@ -38,13 +38,9 @@ function time_diff(to) {
     time_left %= ms_in_a_min;
 
     var secs = Math.floor(time_left / ms_in_a_sec);
-
-    time_left = {d:days, h:hours, m:mins, s:secs};
     
-    document.getElementById("days").innerHTML = time_left.d;
-    document.getElementById("hours").innerHTML = time_left.h;
-    document.getElementById("mins").innerHTML = time_left.m;
-    document.getElementById("secs").innerHTML = time_left.s;
-
-    return time_left; // returns associative array of days, hours, minutes and seconds remaining
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("mins").innerHTML = mins;
+    document.getElementById("secs").innerHTML = secs;
 }
