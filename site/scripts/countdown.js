@@ -9,7 +9,7 @@
 //     <div id = "secs"></div>
 // </div>
 
-document.getElementById("event").innerHTML = "Pair Programming Meetup (Beginner Friendly)"; 
+document.getElementById("event").innerHTML = "Pair Programming Meetup (Beginner Friendly)";
 document.getElementById("venue").innerHTML = "91springboard @ Plot No-44, Phase I, Kavuri Hills <br /> Hyderabad 500033";
 document.getElementById("date").innerHTML = "Sunday 16<sup>th</sup> October 2016<br />2:00 pm - 4:00 pm";
 
@@ -39,8 +39,8 @@ function time_diff(to) {
 
     var secs = Math.floor(time_left / ms_in_a_sec);
     
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("mins").innerHTML = mins;
-    document.getElementById("secs").innerHTML = secs;
+    $("#days").text(days);
+    $("#hours").text(hours);
+    $("#mins").text(mins);
+    $("#secs").text(secs);
 }
