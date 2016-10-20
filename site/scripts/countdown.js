@@ -9,19 +9,37 @@
 //     <div id = "secs"></div>
 // </div>
 
-// schedule is imported from schedule.js; holds all the event details
+// Edit the schedule using as given below:
+// 
+// title : HTML
+// venue : HTML
+// time_formatted  : HTML
+// time : date(yyyy-mm-dd) time(h:m:s) in ISO format; example "2016-10-11 0:00:00" 
 
-countdown();
+var schedule = [
+    {
+        event       : "Pair Programming Meetup (Beginner Friendly)",
+        venue       : "91springboard @ Plot No-44, Phase I, Kavuri Hills <br /> Hyderabad 500033",
+        time_formatted        : "Sunday 16<sup>th</sup> October 2016 <br /> 2:00 pm - 4:00 pm",
+        time    : "2016-10-16 14:00:00",
+    },
+    {
+        event       : "Live Coding Meetup",
+        venue       : "FissionLabs @ 703/A, Road #36, Jubliee Hills <br /> Hyderabad 500033",
+        time_formatted        : "Saturday 22<sup>nd</sup> October 2016 <br /> 2:00 pm - 5:00 pm",
+        time    : "2016-10-22 14:00:00",
+    },
+];
+
 var interval;
 
 function countdown() {
-    if(schedule.length <= 0)
-    {
+    if(schedule.length <= 0) {
         $(".holder").html("<h2>None Scheduled</h2>");
         return;
     }
 
-    interval = setInterval(function(){time_diff(schedule[0]["date_arg"]);}, 500);
+    interval = setInterval(function(){time_diff(schedule[0]["time"]);}, 500);
     return;
 }
 
@@ -44,8 +62,7 @@ function time_diff(to) {
 
     var secs = Math.floor(time_left / ms_in_a_sec);
 
-    if(secs < 0)
-    {
+    if(secs < 0) {
         clearInterval(interval);
         
         schedule.shift();
@@ -55,7 +72,7 @@ function time_diff(to) {
 
     $("#event").html(schedule[0]["event"]);
     $("#venue").html(schedule[0]["venue"]);
-    $("#date").html(schedule[0]["date"]);
+    $("#date").html(schedule[0]["time_formatted"]);
     
     $("#days").text(days);
     $("#hours").text(hours);
@@ -63,3 +80,5 @@ function time_diff(to) {
     $("#secs").text(secs);
     return;
 }
+
+countdown();
