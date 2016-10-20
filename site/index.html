@@ -42,7 +42,7 @@
                             <a class="page-scroll" href="#services">Meetups</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#mentors">Team</a>
+                            <a class="page-scroll" href="#team">Team</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#about">About</a>
@@ -68,7 +68,7 @@
         </header>
 
         <!--Countdown Timer-->
-        <section class="countdown bg-darkest-gray">
+        <section id="services" class="countdown bg-darkest-gray">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-lg-12">
@@ -77,17 +77,17 @@
                         </div>
                         <div class="holder container jumbotron">
                             <div class="details">
-                                <h4><small>Event :</small> <span id="event"></span></h2>
-                                <h4><small>Venue :</small> <span id="venue"></span></h2>
-                                <h4><small>Date :</small> <span id="date"></span></h2>
+                                <h4><small>Event :</small> <span id="event"></span></h4>
+                                <hr>
+                                <h4><small>Venue :</small> <span id="venue"></span></h4>
+                                <hr>
+                                <h4><small>Date :</small> <span id="date"></span></h4>
                             </div>
                             <h2 class="col-sm-3"><span id="days"></span> <small>Days</small></h2>
                             <h2 class="col-sm-3"><span id="hours"></span> <small>Hours</small></h2>
                             <h2 class="col-sm-3"><span id="mins"></span> <small>Minutes</small></h2>
                             <h2 class="col-sm-3"><span id="secs"></span> <small>Seconds</small></h2>
                         </div>
-
-                        <script src="./scripts/countdown.js"></script>
                     </div>
                 </div>
             </div>
@@ -130,6 +130,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Team Section -->
         <section id="team">
             <div class="container">
@@ -310,5 +311,8 @@
         <script src="https://unpkg.com/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script type="text/javascript" src="scripts/main.js"></script>
+        <!--Countdown Timer JS-->
+        <script src="./scripts/schedule.js"></script>
+        <script src="./scripts/countdown.js"></script>
     </body>
 </html>

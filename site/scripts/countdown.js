@@ -9,15 +9,20 @@
 //     <div id = "secs"></div>
 // </div>
 
-document.getElementById("event").innerHTML = "Pair Programming Meetup (Beginner Friendly)";
-document.getElementById("venue").innerHTML = "91springboard @ Plot No-44, Phase I, Kavuri Hills <br /> Hyderabad 500033";
-document.getElementById("date").innerHTML = "Sunday 16<sup>th</sup> October 2016<br />2:00 pm - 4:00 pm";
+// schedule is imported from schedule.js; holds all the event details
 
-var next_meetup = "2016-10-16 14:00:00"; //specify date(yyyy-mm-dd) time(h:m:s) in ISO format; example "2016-10-11 0:00:00" 
-countdown(next_meetup);
+countdown();
+var interval;
 
-function countdown(to) {
-    setInterval(function(){time_diff(to);}, 500);
+function countdown() {
+    if(schedule.length <= 0)
+    {
+        $(".holder").html("<h2>None Scheduled</h2>");
+        return;
+    }
+
+    interval = setInterval(function(){time_diff(schedule[0]["date_arg"]);}, 500);
+    return;
 }
 
 function time_diff(to) {
@@ -38,9 +43,23 @@ function time_diff(to) {
     time_left %= ms_in_a_min;
 
     var secs = Math.floor(time_left / ms_in_a_sec);
+
+    if(secs < 0)
+    {
+        clearInterval(interval);
+        
+        schedule.shift();
+        countdown();
+        return;
+    }
+
+    $("#event").html(schedule[0]["event"]);
+    $("#venue").html(schedule[0]["venue"]);
+    $("#date").html(schedule[0]["date"]);
     
     $("#days").text(days);
     $("#hours").text(hours);
     $("#mins").text(mins);
     $("#secs").text(secs);
+    return;
 }
