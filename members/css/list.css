@@ -1,0 +1,51 @@
+.membersList {
+  list-style-type : none;
+  margin : 0;
+  padding : 0;
+  width : 80%;
+  /*border : 1px solid red;*/
+  margin : auto;
+  /*display: inline-block;*/
+}
+
+.membersList li {
+  height : 100px;
+  width : 400px;
+  padding : 1em;
+  margin : 2.5em;
+  display: inline-block;
+  /*background-color : #eee;*/
+  border : 2px solid #060;
+  border-radius : 5px;
+  line-height : 20px;
+}
+
+.membersList li a {
+  text-decoration: none;
+  color : black;
+}
+
+.membersList li img {
+  height : 100px;
+  float : left;
+/*   visibility : hidden; */
+}
+
+.membersList li .info {
+  height : 100%;
+  margin-left : 120px;
+  /*padding-left : 20px;*/
+}
+
+h2 {
+  margin : 0px;
+  display : inline-block;
+  font-family : Helvetica;
+}
+
+.membersList li .info p {
+  /*width : 98%;*/
+/*   margin-top : 3px; */
+  font-size : 14px;
+  font-family: 'Open Sans', sans-serif;
+}

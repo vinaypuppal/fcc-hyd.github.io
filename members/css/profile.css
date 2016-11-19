@@ -1,0 +1,139 @@
+::-moz-selection { background: #00A200; }
+::selection { background: #00A200; }
+
+.profile-border {
+  border : 3px solid #060;
+  border-bottom : none;
+  border-top : none;
+  /*width : 90%;*/
+  height : auto;
+  padding : 20px;
+  /*margin : auto;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+.head {
+  height : auto;
+  /*width : 95%;*/
+}
+
+.head img {
+  width : 250px;
+  float : left;
+}
+
+.head .bio {
+  position: relative;
+  height : auto;
+  width : 60%;
+  padding-top: 20px;
+  left: 20px;
+  /*margin : auto;*/
+}
+
+.head .bio #description {
+  line-height: 30px;
+}
+
+img, .bio, .social {
+  display : inline-block;
+}
+
+.social {
+  width : 10%;
+  height: auto;
+  float : right;
+  margin-right : 2em;
+}
+
+.social ul {
+  list-style-type: none;
+}
+
+.social ul li {
+  padding : 10px;
+  text-align : center;
+}
+
+.social ul li a {
+  text-decoration: inherit;
+  color : inherit;
+}
+
+.social #freecodecamp {
+  color : #006400;
+}
+
+.progress, .skills {
+  width : 90%;
+  margin : auto;
+  margin-top : 2em;
+  padding : 2% 3%;
+  border : 1px solid #060;
+}
+
+.progress .date {
+  background-color : #0A0;
+  color : white;
+  padding : 10px;
+  font-family : Helvetica;
+}
+
+.progress p {
+  margin : 5%;
+}
+
+.skills {
+  height : 20em;
+  border : none;
+  /*padding : 0;*/
+}
+
+.comfortable, .learning {
+  width : 40%;
+  height : 100%;
+  border : 2px solid #DDD;
+  border-left : none;
+  display : inline-block;
+  margin-left : 6%;
+}
+
+.vertical-green {
+  width : 20px;
+  height : 100%;
+  background-color : #008800;
+  float : left;
+}
+
+.info {
+  width : 80%;
+  /*background-color: red;*/
+  float : right;
+}
+
+@media (max-width : 1060px) {
+  .comfortable, .learning {
+    width : 80%;
+  }
+  .head {
+    width : 100%;
+    margin-left : 15%;
+  }
+  .head .bio {
+    width : 60%;
+    margin: auto;
+  }
+
+  .social {
+    /*margin-left : 40px;*/
+    float : none;
+    display : inline;
+  }
+  .social ul {
+    margin : 0;
+    padding : 0;
+  }
+  .social ul li{
+    display : inline-block;
+  }
+}
