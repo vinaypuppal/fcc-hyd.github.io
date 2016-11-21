@@ -1,3 +1,14 @@
+.header-name {
+  color: #fff;
+  background-color: #006600;
+  padding: 10px 0;
+  text-align: center;
+
+}
+body {
+  margin: 0;
+}
+
 .membersList {
   list-style-type : none;
   margin : 0;

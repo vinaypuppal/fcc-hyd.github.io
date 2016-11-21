@@ -768,11 +768,6 @@ body {
 .countdown h1 {
   color: rgb(10, 100, 3);
   font-size: 3em;
-  text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white, 
-    1px 1px 0 white;
   margin-bottom: 1em;
   margin-top: -1.5em;
 }
@@ -781,7 +776,6 @@ body {
   background: rgba(10, 100, 3, 0.8);
   color: white;
   padding: 10px;
-  border-radius: 100px;
 }
 
 .countdown h2 small {
