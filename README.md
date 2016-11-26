@@ -6,13 +6,13 @@ This site belongs to fcc-hyd community.
 
 1. Follow the instructions on this [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) guide to install Git on your system.
 2. Fork the project into your account and clone it locally
-```bash
-# Get the latest snapshot
-git clone https://github.com/fcc-hyd/fcc-hyd.github.io.git fcc-hyd
+  ```bash
+  # Get the latest snapshot
+  git clone https://github.com/fcc-hyd/fcc-hyd.github.io.git fcc-hyd
 
-# Change directory
-cd fcc-hyd
-```
+  # Change directory
+  cd fcc-hyd
+  ```
 3. Create a branch specific to the issue or feature
 4. Squash your commits
 5. Submit a pull request.
