@@ -8,8 +8,6 @@
 }
 body {
   margin: 0;
-
-
 }
 
 .navbar-custom {
@@ -17,7 +15,7 @@ body {
 }
 
 .navbar-custom .navbar-brand {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .membersList {
@@ -33,6 +31,7 @@ body {
 .membersList li {
   height : auto;
   margin : 1em;
+  margin-left: -1em;
   display: inline-block;
   /*background-color : #eee;*/
   border : 2px solid #060;
