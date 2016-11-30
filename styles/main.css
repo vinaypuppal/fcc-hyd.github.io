@@ -187,21 +187,25 @@ fieldset[disabled] .btn-xl.active {
 
 }
 .navbar-custom .nav li a {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
+  font-size: 1.1em;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
   color: #fff;
   outline: none;
   text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  background-color: rgba(86, 160, 43, 0.37);
+}
+.navbar-custom .nav li a:active {
+  background-color: rgba(86, 160, 43, 0.37);
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #006400;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
@@ -215,7 +219,7 @@ fieldset[disabled] .btn-xl.active {
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
-    border: none;
+    border-bottom: 4px solid #eee;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;

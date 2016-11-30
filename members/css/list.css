@@ -1,12 +1,23 @@
 .header-name {
-  color: #fff;
-  background-color: #006600;
-  padding: 10px 0;
+  color: #333;
   text-align: center;
+  width: 100%;
+  text-transform: capitalize;
+  margin-bottom: 20px;
 
 }
 body {
   margin: 0;
+
+
+}
+
+.navbar-custom {
+  padding: 10px 0;
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.8em;
 }
 
 .membersList {
@@ -15,43 +26,53 @@ body {
   padding : 0;
   width : 80%;
   /*border : 1px solid red;*/
-  margin : auto;
+  margin : 0 auto;
   /*display: inline-block;*/
 }
 
 .membersList li {
-  height : 100px;
-  width : 400px;
-  padding : 1em;
-  margin : 2.5em;
+  height : auto;
+  margin : 1em;
   display: inline-block;
   /*background-color : #eee;*/
   border : 2px solid #060;
-  border-radius : 5px;
+  border-radius : 2px;
   line-height : 20px;
+  box-shadow: 2px 2px 2px #eee;
 }
 
 .membersList li a {
   text-decoration: none;
-  color : black;
+  color : #333;
 }
 
 .membersList li img {
-  height : 100px;
+  width: 125px;
+  height : auto;
   float : left;
-/*   visibility : hidden; */
+  padding:15px;
+  padding-top: 20px;
+
 }
 
 .membersList li .info {
   height : 100%;
   margin-left : 120px;
-  /*padding-left : 20px;*/
+  padding-left : 20px;
+  background-image: url("../a.png");
+  background-size: cover;
+
 }
 
+.membersList li .info h2 {
+  font-size: 1.7em;
+  padding-bottom: 5px;
+}
 h2 {
-  margin : 0px;
+  margin-bottom: 0;
   display : inline-block;
   font-family : Helvetica;
+  text-transform: capitalize;
 }
 
 .membersList li .info p {
@@ -59,4 +80,17 @@ h2 {
 /*   margin-top : 3px; */
   font-size : 14px;
   font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-custom { 
+    position: relative;
+  }
+
+@media (max-width: 768px) {
+  .navbar-custom { 
+    position: relative;
+  }
+  .membersList {
+    width: 100%;
+  }
 }
