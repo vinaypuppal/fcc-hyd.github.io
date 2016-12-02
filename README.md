@@ -24,3 +24,5 @@ This site belongs to fcc-hyd community.
 * Create new folder with your GitHub username. Copy index.html from any of the other member folders. Paste the index.html in the folder you just created and edit it with your details
 * Add and commit the changes
 * Push to your fork and send a pull request
+
+[![Code Triagers Badge](https://www.codetriage.com/fcc-hyd/fcc-hyd.github.io/badges/users.svg)](https://www.codetriage.com/fcc-hyd/fcc-hyd.github.io)
