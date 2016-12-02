@@ -14,10 +14,6 @@ body {
   padding: 10px 0;
 }
 
-.navbar-custom .navbar-brand {
-  font-size: 1.5em;
-}
-
 .membersList {
   list-style-type : none;
   margin : 0;
@@ -29,15 +25,18 @@ body {
 }
 
 .membersList li {
+  width: 100%;
   height : auto;
   margin : 1em;
-  margin-left: -1em;
+  margin-left: -1.5em;
   display: inline-block;
   /*background-color : #eee;*/
   border : 2px solid #060;
   border-radius : 2px;
   line-height : 20px;
   box-shadow: 2px 2px 2px #eee;
+  background-image: url("../a.png");
+  background-size: inherit;
 }
 
 .membersList li a {
@@ -51,16 +50,13 @@ body {
   float : left;
   padding:15px;
   padding-top: 20px;
-
 }
 
 .membersList li .info {
   height : 100%;
   margin-left : 120px;
   padding-left : 20px;
-  background-image: url("../a.png");
   background-size: cover;
-
 }
 
 .membersList li .info h2 {
@@ -91,5 +87,12 @@ h2 {
   }
   .membersList {
     width: 100%;
+  }
+  .membersList li img {
+    width: 100%;
+  }
+  .membersList li .info {
+    width: 100%;
+    margin-left: 0;
   }
 }
