@@ -1,3 +1,4 @@
+[![Code Triagers Badge](https://www.codetriage.com/fcc-hyd/fcc-hyd.github.io/badges/users.svg)](https://www.codetriage.com/fcc-hyd/fcc-hyd.github.io)
 # Welcome to Free Code Camp Hyderabad
 
 We're a web developer community based out of Hyderabad, India. We organize meetups every weekend and help our members learn web development. This repo hosts our GitHub site, which is still under construction. 
@@ -23,7 +24,5 @@ We're a web developer community based out of Hyderabad, India. We organize meetu
 * Open index.html in members folder
 * Add new list item with your details
 * Create new folder with your GitHub username. Copy index.html from any of the other member folders. Paste the index.html in the folder you just created and edit it with your details
-* Add and commit the changes
+* Commit the changes
 * Push to your fork and send a pull request
-
-[![Code Triagers Badge](https://www.codetriage.com/fcc-hyd/fcc-hyd.github.io/badges/users.svg)](https://www.codetriage.com/fcc-hyd/fcc-hyd.github.io)
