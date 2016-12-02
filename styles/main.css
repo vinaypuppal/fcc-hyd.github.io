@@ -164,6 +164,11 @@ fieldset[disabled] .btn-xl.active {
   background-color: #006400;
   border-color: #006400;
 }
+
+.navbar-brand {
+  font-size: 15px;
+
+}
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
