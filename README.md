@@ -1,6 +1,6 @@
 # Welcome to Free Code Camp Hyderabad
 
-This site belongs to fcc-hyd community.
+We're a web developer community based out of Hyderabad, India. We organize meetups every weekend and help our members learn web development. This repo hosts our GitHub site, which is still under construction. 
 
 # Contributing
 
