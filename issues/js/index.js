@@ -63,7 +63,7 @@ $(document).ready(function () {
                          return ( `
                           <div class="issue">
                             <div class="title">
-                              <h2><a href=${issue.html_url}><i class='fa fa-exclamation' aria-hidden="true"></i>${issue.title}</a></h2>
+                              <h2><a href=${issue.html_url} target="_blank"><i class='fa fa-exclamation' aria-hidden="true"></i>${issue.title}</a></h2>
                               <h6>#${issue.number} opened ${moment(issue.created_at).fromNow()} by <strong>${issue.user.login}</strong> on <strong>${repoName}</strong> repoistory</h6>
                             </div>
                             <div class="body">
@@ -102,7 +102,18 @@ $(document).ready(function () {
   }
 
   const renderError = (error) => {
-
+    const message = error.response && error.response.data && error.response.data.message;
+    $('.loader').hide();
+    clearIssues();
+    $('main').append(`
+      <div class="error">
+        <h3>Oops, Sorry We Encountered Some Error!...</h3>
+        <p>${message || ''}</p>
+        <div>
+          <pre><code>${JSON.stringify(error, null, 4)}</code></pre>
+        </div>
+      </div>
+    `)
   }
 
   $('#filter-labels').on('change', (e) => {

@@ -477,7 +477,8 @@ section .issue .body span.float-right > span {
 }
 
 section .issue .body code,
-section .issue .body tt {
+section .issue .body tt,
+.error code {
   margin: 0 2px;
   padding: 0 5px;
   white-space: nowrap;
@@ -486,7 +487,8 @@ section .issue .body tt {
   border-radius: 3px; 
 }
 
-section .issue .body pre code {
+section .issue .body pre code,
+.error pre code {
   margin: 0;
   padding: 0;
   white-space: pre;
@@ -494,7 +496,8 @@ section .issue .body pre code {
   background: transparent;
 }
 
-section .issue .body .highlight pre {
+section .issue .body .highlight pre,
+.error pre {
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
   font-size: 13px;
@@ -504,7 +507,8 @@ section .issue .body .highlight pre {
   border-radius: 3px;
 }
 
-section .issue .body pre {
+section .issue .body pre,
+.error pre {
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
   font-size: 13px;
@@ -514,6 +518,7 @@ section .issue .body pre {
   border-radius: 3px;
 }
 section .issue .body pre code,
+.error pre,
 section .issue .body pre tt {
   background-color: transparent;
   border: none; 
