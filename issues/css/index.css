@@ -1,0 +1,522 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  background-color: #f7f7f7;
+  color: #666;
+}
+
+a {
+  color: #4183C4; 
+}
+
+a.absent {
+  color: #cc0000; 
+}
+
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; 
+}
+
+.text-center {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  background: #006400;
+  height: 250px;
+  color: #fff;
+  text-align: center;
+}
+
+header .logo {
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 3rem;
+}
+header .logo a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+header h3 {
+  font-weight: normal;
+  margin: 10px 0 0 0;
+}
+@media(max-width: 480px) {
+  header h3 {
+    font-size: 1.125rem;
+  }
+}
+header h4 {
+  font-weight: normal;
+}
+header select {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  width: 300px;
+  font-size: 22px;
+  cursor: pointer;
+}
+header select:focus {
+  outline: none;
+}
+header select option {
+  background: #fff;
+  color: #888;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: #0e0b0b;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+}
+
+.loader {
+  text-align: center;
+  font-size: 64px;
+  width: 100%;
+  height: 300px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 90%;
+  margin: 30px auto;
+  background: -webkit-repeating-linear-gradient(45deg, #0e0b0b, #0e0b0b 10px, #888 10px, #888 20px);
+  background: repeating-linear-gradient(45deg, #0e0b0b, #0e0b0b 10px, #888 10px, #888 20px);
+  box-shadow: 0px 2px 4px #888;
+}
+
+section .issue {
+  background: #fff;
+  box-shadow: 0px 2px 4px #888;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+section > h2{
+  background: tomato;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+section .issue .title h2, section .issue .title h6 {
+  margin: 0;
+}
+
+section .issue .title h2 a {
+  text-decoration: none;
+}
+
+section .issue .title h2 a i {
+  border: 1px solid;
+  border-radius: 50%;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+section .issue .title h6 {
+  font-weight: normal;
+  border-bottom: 1px dashed #888
+}
+
+section .issue .labels ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: inline-block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section .issue .labels ul li {
+  margin: 5px 10px;
+  background: lightgreen;
+  padding: 0 5px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px 4px 4px 10px;
+}
+
+section .issue .labels ul li i{
+    margin-right: 5px;
+}
+
+section .issue .footer {
+  border-top: 1px dashed #888;
+  padding: 10px 0 0 0;
+  text-align: right;
+}
+
+section .issue .footer a {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  background: teal;
+  font-weight: bold;
+  box-shadow: 1px 2px 4px #888;
+  transition: all 0.2s
+}
+
+section .issue .footer a:hover {
+  background: #014a4a;
+}
+
+@media(max-width: 800px) {
+  header .logo {
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 620px) {
+  header .logo {
+    font-size: 1.75rem;
+    padding-top: 1.25rem;
+  }
+}
+
+@media(max-width: 450px) {
+  header .logo {
+    font-size: 1.375rem;
+  }
+}
+
+@media(max-width: 400px) {
+  header .logo {
+    font-size: 1.125rem;
+  }
+}
+
+@media(max-width: 420px) {
+  section {
+    width: 95%;
+  }
+  section .issue .title {
+    text-align: center;
+  }
+  section .issue .title h2 {
+    font-size: 1em;
+  }
+}
+
+@media(max-width: 320px) {
+  header {
+    height: 300px;
+  }
+  header select {
+    width: 150px;
+  }
+}
+
+/*START OF MARKDOWN CSS*/
+
+section .issue .body p {
+  text-align: justify;
+  padding: 0 10px;
+}
+
+section .issue .body img {
+  width: 100%;
+}
+
+section .issue .body h1,
+section .issue .body h2,
+section .issue .body h3,
+section .issue .body h4,
+section .issue .body h5,
+section .issue .body h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; 
+}
+
+section .issue .body p, 
+section .issue .body blockquote, 
+section .issue .body ul, 
+section .issue .body ol, 
+section .issue .body dl,
+section .issue .body li,
+section .issue .body table,
+section .issue .body pre {
+  margin: 15px 0; 
+}
+
+section .issue .body h1 p,
+section .issue .body h2 p,
+section .issue .body h3 p,
+section .issue .body h4 p,
+section .issue .body h5 p,
+section .issue .body h6 p {
+  margin-top: 0; 
+}
+
+section .issue .body li p.first {
+  display: inline-block; 
+}
+
+section .issue .body ul,
+section .issue .body ol {
+  padding-left: 30px; 
+}
+
+section .issue .body ul :first-child, 
+section .issue .body ol :first-child {
+  margin-top: 0; 
+}
+
+section .issue .body ul :last-child,
+section .issue .body ol :last-child {
+  margin-bottom: 0; 
+}
+
+section .issue .body dl {
+  padding: 0; 
+}
+section .issue .body dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+section .issue .body dl dt:first-child {
+  padding: 0; 
+}
+section .issue .body dl dt > :first-child {
+  margin-top: 0; 
+}
+section .issue .body dl dt > :last-child {
+  margin-bottom: 0; 
+}
+section .issue .body dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+section .issue .body dl dd > :first-child {
+  margin-top: 0; 
+}
+section .issue .body dl dd > :last-child {
+  margin-bottom: 0;
+}
+
+section .issue .body blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777;
+}
+section .issue .body blockquote > :first-child {
+    margin-top: 0; 
+}
+section .issue .body blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+section .issue .body table {
+  padding: 0;
+}
+section .issue .body table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+section .issue .body table tr:nth-child(2n) {
+      background-color: #f8f8f8;
+}
+section .issue .body table tr th {
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+}
+section .issue .body table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+section .issue .body table tr th :first-child,
+section .issue .body table tr td :first-child {
+  margin-top: 0;
+}
+table tr th :last-child,
+section .issue .body table tr td :last-child {
+  margin-bottom: 0; 
+}
+
+section .issue .body span.frame {
+  display: block;
+  overflow: hidden; 
+}
+
+section .issue .body span.frame > span {
+  border: 1px solid #dddddd;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 13px 0 0;
+  padding: 7px;
+  width: auto; 
+}
+
+section .issue .body span.frame span img {
+  display: block;
+  float: left; 
+}
+
+section .issue .body span.frame span span {
+  clear: both;
+  color: #333333;
+  display: block;
+  padding: 5px 0 0;
+ }
+
+section .issue .body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; 
+}
+section .issue .body span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center;
+}
+section .issue .body span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+section .issue .body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; 
+}
+section .issue .body span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right;
+}
+section .issue .body span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+
+section .issue .body span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left;
+}
+
+section .issue .body span.float-left span {
+    margin: 13px 0 0;
+}
+
+section .issue .body span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right;
+}
+
+section .issue .body span.float-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: right;
+}
+
+section .issue .body code,
+section .issue .body tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; 
+}
+
+section .issue .body pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+section .issue .body .highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+section .issue .body pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+section .issue .body pre code,
+section .issue .body pre tt {
+  background-color: transparent;
+  border: none; 
+}
+
+/*END OF MARKDOWN CSS*/
