@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FCC-HYD Github Org Issues Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+   <link rel="shortcut icon" href="../img/favicon.png">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="/">
+        <i class="fa fa-free-code-camp" aria-hidden="true"></i> FreeCodeCamp Hyderabad
+      </a>
+    </div>
+    <h3>All Issues From <strong>fcc-hyd</strong> Github Organisation</h3>
+    <div>
+      <h4>Filter By Labels</h4>
+      <select name="filter-labels" id="filter-labels">
+        <option value="all">All</option>
+        <option value="bug">bug</option>
+        <option value="duplicate">duplicate</option>
+        <option value="Easy-To-Fix">Easy-To-fix</option>
+        <option value="enhancement">enhancement</option>
+        <option value="invalid">invalid</option>
+        <option value="question">question</option>
+        <option value="wontfix">wontfix</option>
+        <option value="project-idea">project-idea</option>
+        <option value="team-formed">team-formed</option>
+        <option value="updated-info">updated-info</option>
+      </select>
+    </div>
+  </header>
+  <main id="top">
+    <div class="loader">
+      <i class="fa fa-spin fa-spinner"></i>
+    </div>
+    <!-- Issues are added through JavaScript -->
+  </main>
+  <footer>
+    FreeCodeCamp Hyderabad  &copy; 2016
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+  <script src="https://cdn.polyfill.io/v2/polyfill.js?features=es6"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
