@@ -99,7 +99,7 @@ footer {
   justify-content: center;
 }
 
-.loader {
+.loader, .no-issues {
   text-align: center;
   font-size: 64px;
   width: 100%;
@@ -111,6 +111,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.no-issues h3 {
+  font-size: 24px;
+  font-weight: normal;
 }
 
 section {
