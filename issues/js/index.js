@@ -94,11 +94,19 @@ $(document).ready(function () {
     });
 
     $('.loader').hide();
-
-    sectionUI.filter(section => section).forEach((section) => {
-      $('main').append(section);
-    });
-
+    if(sectionUI.filter(section => section).length) {
+      sectionUI.filter(section => section).forEach((section) => {
+        $('main').append(section);
+      });
+    } else {
+      $('main').append(`
+        <div class="no-issues text-center">
+          <h3>
+            No Issues Found with <strong>${selectedLabel}</strong> label
+          </h3>
+        </div>
+      `)
+    }
   }
 
   const renderError = (error) => {
