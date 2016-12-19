@@ -1,0 +1,66 @@
+{
+  "name": "fcc-hyd.github.io",
+  "version": "1.0.0",
+  "description": "FreeCodeCamp Hyderabad",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --env.dev",
+    "prebuild": "rimraf dist/",
+    "build": "webpack --env.prod -p",
+    "build:dev": "yarn build && pushstate-server dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinaypuppal/fcc-hyd.github.io.git"
+  },
+  "author": "Vinay Puppal <me@vinaypuppal.com> (https://www.vinaypuppal.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinaypuppal/fcc-hyd.github.io/issues"
+  },
+  "homepage": "https://github.com/vinaypuppal/fcc-hyd.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2016": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "2.0.0-beta.4",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.24.1",
+    "json-loader": "^0.5.4",
+    "postcss-loader": "^1.2.1",
+    "progress-bar-webpack-plugin": "^1.9.0",
+    "pushstate-server": "^2.1.0",
+    "rimraf": "^2.5.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "2.2.0-rc.0",
+    "webpack-config-utils": "^2.3.0",
+    "webpack-dev-server": "2.2.0-rc.0",
+    "webpack-validator": "^2.3.0",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "semicolon": false,
+    "esnext": true,
+    "space": true,
+    "rules": {
+      "import/no-unassigned-import": 0
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ],
+      "es2016"
+    ]
+  }
+}
