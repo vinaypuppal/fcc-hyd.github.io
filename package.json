@@ -62,5 +62,8 @@
       ],
       "es2016"
     ]
+  },
+  "dependencies": {
+    "webfontloader": "^1.6.27"
   }
 }
