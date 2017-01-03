@@ -1,5 +1,2 @@
 @import "./base.css";
-
-h1 {
-  color: orangered;
-}
+@import "./header.css";

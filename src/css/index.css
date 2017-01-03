@@ -1,5 +1,10 @@
 @import "./base.css";
+@import "./header.css";
 
-h1 {
-  color: green;
+.meetups {
+  background: #eee;
+}
+
+.meetups h1::after {
+  width: 250px;
 }
