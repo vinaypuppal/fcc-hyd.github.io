@@ -19,57 +19,6 @@ a {
   text-decoration: none;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 .text-center {
   text-align: center;
-}
-
-.container {
-  max-width: 1260px;
-  margin: 0 auto;
-}
-
-section {
-  padding: 30px 10px;
-}
-
-section h1 {
-  position: relative;
-  padding: 0;
-}
-
-section h1::after {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 3px;
-  background: green;
-}
-
-section p {
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.5rem;
-  color: #444;
-  text-align: center;
-}
-
-@media (max-width: 480px) {
-  section {
-    padding: 20px;
-  }
-
-  section p {
-    text-align: center;
-    font-size: 1rem;
-  }
 }

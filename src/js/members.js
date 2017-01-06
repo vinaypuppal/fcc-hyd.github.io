@@ -1,5 +1,11 @@
+/*
+  global document
+*/
+
+import menuToggle from './header'
 import './loadfont'
 import '../css/members.css'
-import members from '../data/members'
 
-members.forEach(member => console.log(member.name))
+document.addEventListener('DOMContentLoaded', () => {
+  menuToggle()
+})

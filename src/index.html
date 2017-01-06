@@ -11,59 +11,75 @@
   -->
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="container">
-        <a href="/">
+  <header class="header">
+    <nav class="header__nav">
+      <div class="header__navContainer">
+        <a class="header__navLogo" href="/">
           <i class="fa fa-free-code-camp"></i> FreeCodeCamp Hyderabad
         </a>
-        <a class="menu js-menu">
+        <a class="header__navMenuBtn js-menu">
           <span>Menu</span>
         </a>
-        <ul>
-          <li><a class="active" href="#about">About</a></li>
-          <li><a href="#meetups">Meetups</a></li>
-          <li><a href="/learn">Learn</a></li>
-          <li><a href="/members">Members</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/issues">Issues</a></li>
-          <li><a href="/jobs">Jobs</a></li>
-          <li><a href="/shop">Shop</a></li>
+        <ul class="header__navMenu">
+          <li class="header__navMenuItem">
+            <a class="header__navMenuLink header__navMenuLink--active" href="/#about">About</a>
+          </li>
+          <li class="header__navMenuItem">
+            <a class="header__navMenuLink" href="/#meetups">Meetups</a>
+          </li>
+          <li class="header__navMenuItem">
+            <a class="header__navMenuLink" href="/learn">Learn</a>
+          </li>
+          <li class="header__navMenuItem">
+            <a class="header__navMenuLink" href="/members">Members</a>
+          </li>
+          <li class="header__navMenuItem">
+            <a class="header__navMenuLink" href="/projects">Projects</a>
+          </li>
+          <li class="header__navMenuItem">
+            <a class="header__navMenuLink" href="/issues">Issues</a>
+          </li>
+          <li class="header__navMenuItem">
+            <a class="header__navMenuLink" href="/jobs">Jobs</a>
+          </li>
+          <li class="header__navMenuItem">
+            <a class="header__navMenuLink" href="/shop">Shop</a>
+          </li>
         </ul>
       </div>
     </nav>
-    <div class="banner text-center">
-      <h1>Next Meetup</h1>
-      <h2>
+    <div class="header__banner text-center">
+      <h1 class="header__bannerTitle">Next Meetup</h1>
+      <h2 class="header__bannerSubTitle">
         HackerMonth(Project Showcase)
       </h2>
-      <div class="details">
-        <div class="date">
+      <div class="header__bannerDetails">
+        <div class="header__bannerDate">
           <i class="fa fa-calendar"></i> 24th Dec 2016, 2PM
         </div>
-        <div class="location">
+        <div class="header__bannerLocation">
           <i class="fa fa-map-marker"></i> Wave Labs, 1st Floor
         </div>
       </div>
-      <div class="cta">
-        <a href="#">More Details <i class="fa fa-arrow-right"></i></a>
+      <div class="header__bannerCta">
+        <a class="header__bannerCtaLink" href="#">More Details <i class="fa fa-arrow-right"></i></a>
       </div>
     </div>
-    <div class="overlay"></div>
+    <div class="header__overlay"></div>
   </header>
   <main>
-    <section id="about" class="about">
-      <div class="container">
-        <h1 class="text-center">About Us</h1>
-        <p>
+    <section id="about" class="section">
+      <div class="section__container">
+        <h1 class="section__title text-center">About Us</h1>
+        <p class="section__description">
           FCC-HYD is a usergroup focused on JavaScript and related topics. And Building a cohesive local web developer community for <strong>Hyderabad, India</strong>. We organize meetups <strong>every weekend</strong>
         </p>
       </div>
     </section>
-    <section id="meetups" class="meetups">
-      <div class="container">
-        <h1 class="text-center">Upcoming Meetups</h1>
-        <p>
+    <section id="meetups" class="section section--greyBg">
+      <div class="section__container">
+        <h1 class="section__title text-center">Upcoming Meetups</h1>
+        <p class="section__description">
           FCC-HYD is a usergroup focused on JavaScript and related topics. And Building a cohesive local web developer community for <strong>Hyderabad, India</strong>. We organize meetups <strong>every weekend</strong>
         </p>
       </div>
